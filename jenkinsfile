@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+    stages {
+        stage ("SCM checkout") {
+            steps {
+                git "https://github.com/evarestigwe/nginx-repo.git"
+
+            }
+        }
+        stage(" execute Ansible") {
+           steps {
+                
+            }
+        }
+    }
+
